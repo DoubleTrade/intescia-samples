@@ -1,0 +1,17 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "ignore": [
+  ],
+  "entry": [
+    "features/die/die.ts",
+    "features/login/index.ts",
+    "features/login/login.ts",
+    "features/users/users.ts"
+  ],
+  "project": [
+    "features/**/*.ts"
+  ],
+  "ignoreBinaries": [],
+  "ignoreDependencies": [],
+  "exclude": []
+}

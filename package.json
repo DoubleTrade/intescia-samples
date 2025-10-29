@@ -1,0 +1,56 @@
+{
+  "name": "@intescia/samples",
+  "description": "Samples files for Intescia API usages",
+  "version": "0.1.0",
+  "author": "Intescia",
+  "type": "module",
+  "files": [
+    "features",
+    "CHANGELOG.md",
+    "README.md",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@cspell/dict-fr-fr": "2.3.0",
+    "@eslint/js": "9.39.1",
+    "@types/chrome": "0.1.31",
+    "@types/mocha": "10.0.10",
+    "@types/node": "24.10.1",
+    "chalk": "5.4.1",
+    "cspell": "9.2.0",
+    "eslint": ">=5.16.0",
+    "knip": "5.64.2",
+    "prettier": "3.5.2",
+    "swagger-schema-official": "2.0.0-bab6bed",
+    "swagger-typescript-api": "13.2.16",
+    "tsx": "4.20.6",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.25.0",
+    "vite": "6.4.1",
+    "vite-plugin-preload": "0.4.2",
+    "vite-plugin-pwa": "1.0.0"
+  },
+  "dependencies": {
+    "oidc-client-ts": "^3.3.0"
+  },
+  "scripts": {
+    "check:clean-code": "knip",
+    "check:spell-checker": "cspell",
+    "check:tsc": "tsc --noEmit",
+    "check:lint": "eslint ./features --quiet --cache --cache-location .eslintcache",
+    "generate:api": "tsx ./scripts/generate-api.ts",
+    "start": "tsx ./scripts/serve.ts"
+  },
+  "packageManager": "yarn@4.10.3",
+  "peerDependencies": {
+    "@floating-ui/dom": "^1.7.3",
+    "@open-wc/scoped-elements": "^3.0.5",
+    "@shoelace-style/shoelace": "^2.20.1"
+  },
+  "resolutions": {
+    "debug": "4.4.3",
+    "esbuild": "^0.25.0",
+    "tar-fs": "^3.1.1",
+    "vite": "5.4.21"
+  }
+}
