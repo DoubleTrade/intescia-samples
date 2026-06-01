@@ -59,7 +59,7 @@ Le serveur démarre sur `http://localhost:3000`. Naviguez vers les différentes 
 
 - `/features/login/` - Authentification OAuth2/OIDC
 - `/features/users/` - Recherche et liste des utilisateurs
-- `/features/die/` - Gestion des commandes de découpe et rapports
+- `/features/die/` - Gestion des commandes de découpe et exports
 
 ## 📚 Use Cases couverts
 
@@ -103,8 +103,8 @@ const response = await currentUserApi.searchUsersInCurrentOrganization(
 
 - ✅ Recherche des commandes DCI (ex DIE) de l'organisation
 - ✅ Récupération d'une étude de coûts (Cost Study)
-- ✅ Génération de rapports de production
-- ✅ Transformation des données pour la génération de rapports
+- ✅ Génération d'exports
+- ✅ Transformation des données pour la génération d'exports
 
 **Endpoints utilisés :**
 ```typescript
@@ -115,7 +115,7 @@ POST /dies/{id}/report
 
 **Fonctionnalités avancées :**
 - Chargement dynamique des études de coûts
-- Génération de rapports avec données quantifiées
+- Génération d'exports avec données quantifiées
 - Interface interactive pour explorer les commandes
 - Gestion du statut des commandes (FINISHED, etc.)
 
