@@ -155,7 +155,7 @@ intescia-samples/
 │   │   ├── index.html    # Interface utilisateur
 │   │   └── users.ts      # Logique de recherche
 │   └── die/              # Gestion des commandes de découpe
-│       ├── index.html    # Interface DCI orders DCI (ex DIE orders)
+│       ├── index.html    # Interface die orders
 │       └── die.ts        # Logique métier
 ├── lib/                  # Utilitaires partagés
 │   ├── back-to-home.ts   # Navigation
