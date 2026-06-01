@@ -98,10 +98,10 @@ const response = await currentUserApi.searchUsersInCurrentOrganization(
 );
 ```
 
-### 3. **Gestion des commandes DIE (Die Orders)**
+### 3. **Gestion des commandes DCI (ex DIE) (Die Orders)**
 📁 `features/die/`
 
-- ✅ Recherche des commandes DIE de l'organisation
+- ✅ Recherche des commandes DCI (ex DIE) de l'organisation
 - ✅ Récupération d'une étude de coûts (Cost Study)
 - ✅ Génération de rapports de production
 - ✅ Transformation des données pour la génération de rapports
@@ -155,7 +155,7 @@ intescia-samples/
 │   │   ├── index.html    # Interface utilisateur
 │   │   └── users.ts      # Logique de recherche
 │   └── die/              # Gestion des commandes de découpe
-│       ├── index.html    # Interface die orders
+│       ├── index.html    # Interface DCI orders DCI (ex DIE orders)
 │       └── die.ts        # Logique métier
 ├── lib/                  # Utilitaires partagés
 │   ├── back-to-home.ts   # Navigation
